@@ -1,0 +1,92 @@
+\chapter{Secondary Reaction Energy Derivation}
+\label{Secondary Reaction Energy}
+
+	Consider the nuclear reaction:
+	%
+	\begin{equation}
+		\text{A} + \text{B} \rightarrow \text{C} + \text{D}
+	\end{equation}
+	%
+	We are interested in the final lab-frame energy of the product C in this reaction. This is given by:
+	%
+	\begin{equation}
+		E_C = \frac{1}{2} m_C |\vec{v}_c|^2
+		\label{Appendix_A_Eq_LabFrameEnergy}
+	\end{equation}
+	%
+	where $\vec{v}_C$ is the lab frame velocity and $m_C$ is the mass of product C. The lab frame velocity is given by:
+	%
+	\begin{equation}
+		\vec{v}_C = \vec{u}_C + \vec{v}_{CM}
+	\end{equation}
+	%
+	where $\vec{u}_C$ is the center of mass velocity of product C and $v_{CM}$ is the system's center of mass velocity given by:
+	%
+	\begin{equation}
+		\vec{v}_{CM} = \frac{m_A\vec{v}_A + m_B\vec{v}_B}{m_A + m_B}
+	\end{equation}
+	%
+	The magnitude of $\vec{u}_C$ is given by:
+	%
+	\begin{equation}
+		|\vec{u}_C| = \sqrt{\frac{2\mathcal{E}_C}{m_C}}
+	\end{equation}
+	%
+	where $\mathcal{E}_C$ is the center-of-mass energy of product C given by:
+	\begin{equation}
+		\mathcal{E}_C = \frac{m_D}{m_C+m_D} \left(Q + K\right)
+	\end{equation}
+	%
+	where $Q$ is the energy gain of the reaction given by:
+	\begin{equation}
+		Q = \left(m_A + m_B - m_C - m_D\right)c^2
+	\end{equation}
+	%
+	where $c$ is the speed of light, and $K$ is the kinetic energy given by:
+	%
+	\begin{equation}
+		K = \frac{1}{2}\mu \left(\vec{v}_A - \vec{v}_B\right)^2
+	\end{equation}
+	%
+	and $\mu$ is the reduced mass given by:
+	\begin{equation}
+		\mu = \frac{m_A m_B}{m_A + m_B}
+	\end{equation}
+	%
+	If we assume $|\vec{v}_A| \ll |\vec{v}_B|$ (say in the case of a secondary nuclear reaction) then the only unknown is the direction of $\vec{u}_C$. We can rewrite equation \ref{Appendix_A_Eq_LabFrameEnergy} in terms of $\theta$, the angle between $\vec{u}_C$ and $\vec{v}_{CM}$:
+	
+	\begin{equation}
+		\begin{split}
+			E_C &= \frac{1}{2} m_C |\vec{v}_c|^2 \\
+			& = \frac{1}{2} m_C \left(\vec{u}_C + \vec{v}_{CM}\right)^2 \\
+			& = \frac{1}{2} m_C \left( |\vec{u}_C|^2 + |\vec{v}_{CM}|^2 + 2|\vec{u}_C||\vec{v}_{CM}|\cos\theta\right) \\ 
+			& = \frac{1}{2} m_C \left( \frac{2\mathcal{E}_C}{m_C} + \left(\frac{m_B}{m_A+m_B}\right)^2|\vec{v}_{B}|^2 + 2\sqrt{\frac{2\mathcal{E}_C}{m_C}}\left(\frac{m_B}{m_A+m_B}\right)|\vec{v}_{B}|\cos\theta\right) \\ 
+			& = \frac{1}{2} m_C \left( \frac{2\mathcal{E}_C}{m_C} + \left(\frac{m_B}{m_A+m_B}\right)^2\frac{2E_B}{m_B} + 2\sqrt{\frac{2\mathcal{E}_C}{m_C}}\left(\frac{m_B}{m_A+m_B}\right)\sqrt{\frac{2E_B}{m_B}}\cos\theta\right) \\ 
+		\end{split}
+	\end{equation}
+	%
+	If we let $R_{AB} = \left(\frac{m_B}{m_A+m_B}\right)^2$ and $R_{CB}=\frac{m_C}{m_B}$, this reduces to:
+	%
+	\begin{equation}
+		E_C(\theta) = \mathcal{E}_C + R_{AB}R_{CB}E_B + 2 \sqrt{R_{AB}R_{CB}E_B\mathcal{E}_C}\cos\theta \\ 
+		\label{Appendix_A_LabFrame_Energy_Theta_Function}
+	\end{equation}
+	%
+	This equation is maximized when $\theta=0$. This is the case where the product $C$ is born in the same direction as the center of mass momentum. Similarly, this equation is minimized when $\theta=\pi$ or when the product is born opposite the center of mass momentum. Using equation \ref{Appendix_A_LabFrame_Energy_Theta_Function} we can calculate the energy ranges of various secondary particles:
+	%
+	\begin{equation}
+		\text{D} + \text{T (1.01 MeV)} \rightarrow \alpha \text{ (6.7 - 1.5 MeV)} + \text{n (11.9 - 17.1 MeV)}
+	\end{equation}
+	%
+	\begin{equation}
+		\text{D} + ^3\text{He (0.82 MeV)} \rightarrow \alpha \text{ (6.6 - 1.7 MeV)} + \text{p (12.6 - 17.4 MeV)}
+	\end{equation}
+	%
+	\begin{equation}
+		\text{D (9.5 MeV)} + \text{T} \rightarrow \alpha \text{ (15.2 - 0.2 MeV)} + \text{n (11.8 - 26.9 MeV)}
+	\end{equation}
+	%
+	\begin{equation}
+		\text{D (9.5 MeV)} + ^3\text{He} \rightarrow \alpha \text{ (15.5 - 0.2 MeV)} + \text{p (12.3 - 27.6 MeV)}
+	\end{equation}
+	%

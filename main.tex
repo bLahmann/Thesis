@@ -1,0 +1,80 @@
+\documentclass[12pt,twoside]{mitthesis}
+\usepackage{lgrind}
+\usepackage{cmap}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\pagestyle{plain}
+
+\usepackage{titlesec, blindtext, color}
+\definecolor{gray75}{gray}{0.75}
+\newcommand{\hsp}{\hspace{20pt}}
+\titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter\hsp\textcolor{gray75}{|}\hsp}{0pt}{\Huge\bfseries}
+
+\usepackage{hyperref}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+
+\usepackage{tabu}
+
+\usepackage{listings}
+\usepackage{xcolor}
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{style}{
+	backgroundcolor=\color{backcolour},   
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple}
+}
+\lstset{style=style}
+
+\usepackage{graphicx}
+\usepackage{svg}
+\graphicspath{ {figures/} }
+
+\usepackage[sectionbib]{natbib}
+\usepackage{chapterbib}
+\renewcommand\bibname{References}
+
+\newcommand{\todo}[1]{\color{red} #1 \color{black}}
+
+
+
+\begin{document}
+
+    % ************ %
+    % FRONT MATTER %
+    % ************ %
+    
+    \include{FrontMatter/titlePage}
+    \include{FrontMatter/abstract}              \cleardoublepage
+    \include{FrontMatter/acknowledgments}       \cleardoublepage
+    \include{FrontMatter/contentTables}         \cleardoublepage
+
+
+    % **********
+    % CHAPTERS *
+    % **********
+
+    \include{Chapters/0_ThesisOverview/main}                    \cleardoublepage
+    \include{Chapters/1_Introduction/main}                      \cleardoublepage
+    \include{Chapters/2_SecondaryNeutronsOnNIF/main}            \cleardoublepage
+    \include{Chapters/3_NeutronSpectrometerOnZ/main}            \cleardoublepage
+    \include{Chapters/4_WarmDenseMatterStoppingOnOMEGA/main}    \cleardoublepage
+    
+    
+    % ************
+    % APPENDIXES *
+    % ************
+
+    \appendix
+    \include{Appendixes/secondary_energy_derivation}
+
+\include{biblio}
+\end{document}
+
