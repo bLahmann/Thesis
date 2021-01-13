@@ -8,7 +8,15 @@
 \usepackage{titlesec, blindtext, color}
 \definecolor{gray75}{gray}{0.75}
 \newcommand{\hsp}{\hspace{20pt}}
-\titleformat{\chapter}[hang]{\Huge\bfseries}{\thechapter\hsp\textcolor{gray75}{|}\hsp}{0pt}{\Huge\bfseries}
+
+
+\titleformat{\chapter}[display]
+    {\bfseries\centering}
+    {\Huge\MakeUppercase{\chaptertitlename}~\thechapter}
+    {1pc}
+    {\Huge}
+    [\vspace*{\fill}\newpage]
+
 
 \usepackage{hyperref}
 \usepackage{amsfonts}
@@ -35,6 +43,8 @@
 
 \usepackage{graphicx}
 \usepackage{svg}
+\usepackage[figuresright]{rotating}
+\usepackage{multirow}
 
 \usepackage[sectionbib]{natbib}
 \usepackage{chapterbib}
@@ -72,7 +82,7 @@
     % ************
 
     \appendix
-    \include{Appendixes/secondary_energy_derivation}
+    \include{Appendixes/main}
 
 
 \end{document}

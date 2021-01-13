@@ -1,4 +1,4 @@
-\chapter{title}
+\chapter{A Neutron Recoil-Spectrometer for Measuring Yield and Determining Liner Areal Densities at the Z Facility}
 
 	Deuterium gas (D$_2$) filled Inertial Confinement Fusion (ICF) implosions are routinely executed at the National Ignition Facility (NIF) \cite{NIF_Ref}, the OMEGA laser \cite{OMEGA_Ref}, and the Z facility \cite{Z_Ref}. In these experiments, fusion neutrons are generated via the following reaction:
 
@@ -31,7 +31,7 @@ where $A$ is the atomic mass of the ion, $E_n$ is the incident energy of the neu
 \begin{figure}[h!]
 	
 	\centering
-	\includegraphics{nonShieldedCartoon}
+	\includegraphics[scale=1.5]{Figures/nonShieldedCartoon.pdf}
 	\caption{Illustrations of two concepts for a DD-n spectrometer. In each case, incoming neutrons pass through a conversion foil in which some of them have elastic collisions with ions. Many of the recoil ions are knocked in the general direction of a CR-39 detector, where their spectrum can be measured and converted to a spectrum of the incident neutrons. Figure \ref{fig_nonShieldedCartoon}a depicts the most simple design with the conversion foil directly in line with the detector. This minimizes $\theta$ and thus maximize $E_A$. Additionally, it requires the smallest possible footprint. Figure \ref{fig_nonShieldedCartoon}b shows a design with an annular conversion foil. This leaves space in-front of the detector free for things like shielding or structure components. Shielding requirements are discussed in more detail in Section \ref{section_nextDesign}. }
 	\label{fig_nonShieldedCartoon}
 	
@@ -42,7 +42,7 @@ Using the most basic example in Figure \ref{fig_nonShieldedCartoon}a, there are 
 \begin{figure}[h!]
 	
 	\centering
-	\includegraphics{distanceThicknessContours}
+	\includegraphics[scale=1.2]{Figures/distanceThicknessContours.pdf}
 	\caption{Contours of the total number of protons per cm$^2$ per 10$^{12}$ DD neutrons (a) and the signal full-width-half-max in keV (b) as a function of the detector distance ($\ell_d$) and the foil thickness ($t_f$). The simulations assumed a mono-energetic 2.5 MeV neutron source, a 5.0 cm diameter for the foil and detector, and a neutron-source distance ($\ell_s$) of 30.0 cm. The foil was made of 1.0 g/cm$^3$ of CH$_2$ and the recoil-ions were protons.}
 	\label{fig_distanceThicknessContour}
 	
@@ -51,7 +51,7 @@ Using the most basic example in Figure \ref{fig_nonShieldedCartoon}a, there are 
 \begin{figure}[h!]
 	
 	\centering
-	\includegraphics{recoilProtonSpectra}
+	\includegraphics[scale=1.5]{Figures/recoilProtonSpectra.pdf}
 	\caption{MCNP6-simulated recoil-proton spectra from the data-set plotted in Figure \ref{fig_distanceThicknessContour}. The red diamond (blue square) data is for the case $\ell_d$ = 50 (10) cm and $t_f$ = 20 (1) $\mu$m. Effectively, the two spectra demonstrate the broadening associated with thick filters and small distances respectively.}
 	\label{fig_recoilProtonSpectra}
 	
@@ -71,7 +71,7 @@ To test the concept on the Z facility, a simple neutron recoil-spectrometer with
 \begin{figure}[h!]
 	
 	\centering
-	\includegraphics{firstSpectrometer}
+	\includegraphics[scale=1.5]{Figures/firstSpectrometer.pdf}
 	\caption{SOLIDWORKS drawing of the neutron recoil-spectrometer fielded on the Z facility for shot z3135. The spectrometer consisted of a CH$_2$ conversion foil (yellow) and CR-39 detector (teal) all contained with an aluminum tube (gray) housing structure. The foil was 10 $\mu$m thick and positioned 25 cm away from the CR-39 detector. These parameters were chosen in an attempt to measure the ion temperature. This was done before the CR-39 broadening was well characterized.}
 	\label{fig_firstSpectrometer}
 	
@@ -82,7 +82,7 @@ The spectrometer was fielded on shot z3135, with the front of the housing sittin
 \begin{figure}[h!]
 	
 	\centering
-	\includegraphics{DDnSpectrum}
+	\includegraphics[scale=1.5]{Figures/DDnSpectrum.pdf}
 	\caption{DDn spectrum from shot z3135, measured by the proof-of-principle neutron recoil-spectrometer shown in Figure \ref{fig_firstSpectrometer}. The spectrum was determined from the CR-39 detector after using CCT to reduce the neutron background. The red data points are the raw data and the black dashed curve is a Gaussian fit to the main peak. The yield under the Gaussian is between $1.7\times10^{12}$ and $2.8\times10^{12}$ depending on the modeling of the scattering environment. The yield as inferred by indium activation was roughly $3.0\times10^{12}$. The FWHM of the Gaussian fit was 528 keV.}
 	\label{fig_DDnSpectrum}
 	
@@ -113,7 +113,7 @@ The primary control we have on this equation is through the $\phi_n^{\mathrm{lin
 \begin{figure}[h!]
 	
 	\centering
-	\includegraphics{shieldedSpectrometer}
+	\includegraphics[scale=1.5]{Figures/shieldedSpectrometer.pdf}
 	\caption{SOLIDWORKS drawing of the neutron-recoil-spectrometer proposed for the Z facility. The CR-39 detector (teal) is shielded from direct line-of-sight neutrons by a polyethylene plug (red) directly in front. The conversion foil (yellow) is annular and separated from shielding plug by a thin sheet of aluminum. This prevents recoil-protons created within the shield from reaching the CR-39 detector. The whole system is contained within an aluminum housing (gray) which is itself surrounded by a layer of polyethylene (blue) to shield again external neutron scatter sources. The outer surface of the aluminum housing is conical with respect to TCC so as to reduce the amount of neutron-scatter caused by the spectrometer itself. }
 	\label{fig_shieldedSpectrometer}
 	
@@ -126,7 +126,7 @@ The CR-39 detector is shielded from direct line of sight neutrons using a polyet
 \begin{figure}[h!]
 	
 	\centering
-	\includegraphics{S2B_Housing}
+	\includegraphics[scale=1.2]{Figures/S2B_Housing.pdf}
 	\caption{MCNP6 integrated down-scattered proton fluences in the case of a compressed liner (blue squares), in the case of no liner (yellow circles), and neutron-induced protons in the CR-39 (red diamonds) for various lengths of shield plugs. Figure \ref{fig_signal2BackgroundHousing}(a) illustrates the cases where the housing was not modeled and Figure \ref{fig_signal2BackgroundHousing}(b) illustrates the cases where the housing was modeled. Both figures do not model the external shield nor any additional sources of external scattering. In these calculations, the compressed liners had an areal density of 1.3 g/cm$^2$ and all other parameters were taken from Table \ref{tab_designParameters}. Both Figures show $(S/B)_{dsr}$ plotted as black dashed curves. }
 	\label{fig_signal2BackgroundHousing}
 	
@@ -142,6 +142,7 @@ In addition to self-scatter in the spectrometer housing, there are several sourc
 	\caption{Parameters used in MCNP6 to model the geometry depicted in Figure \ref{fig_z_los}. All cylinders are centered about TCC.  }
 	\label{tab_externalParameters}
 	\renewcommand{\arraystretch}{1.2} 
+	\centering
 	\begin{tabular}{  c c  }
 		&\\
 		\multicolumn{2}{c}{Coil Spacer} \\\hline
@@ -169,7 +170,7 @@ In addition to self-scatter in the spectrometer housing, there are several sourc
 \begin{figure}[h!]
 	
 	\centering
-	\includegraphics{z_los}
+	\includegraphics[scale=1.5]{Figures/z_los.pdf}
 	\caption{SOLIDWORKS model of an example line-of-sight that a neutron-recoil-spectrometer might have at the Z facility. Of particular interest is the MITL deck that the detector would sit on, the blast shield that the detector would against, and the spacer that can potentially separate the spectrometer from the liner.}
 	\label{fig_z_los}
 	
@@ -182,7 +183,8 @@ To test the effects of each individual component, they were each modeled individ
 \begin{table}[!h]
 	\caption{ $(S/B)_{dsr}$ inferred from MCNP6 once external scattering sources are considered. Simulations were done without any external shielding and otherwise used parameters listed in Table \ref{tab_externalParameters} and Table \ref{tab_designParameters}. }
 	\label{tab_externalS2B}
-	\renewcommand{\arraystretch}{1.5} 
+	\renewcommand{\arraystretch}{1.5}
+	\centering
 	\begin{tabular}{  c | c  }
 		Case & $(S/B)_{dsr}$ \\\hline
 		No External Sources & 5.71 \\
@@ -197,7 +199,7 @@ As shown in Table \ref{tab_externalS2B}, each individual component affects $(S/B
 \begin{figure}[h!]
 	
 	\centering
-	\includegraphics{S2B_spacerHole}
+	\includegraphics[scale=1.5]{Figures/S2B_SpacerHole.pdf}
 	\caption{MCNP6 integrated down-scattered proton fluences in the case of a compressed liner (blue squares), in the case of no liner (yellow circles), and neutron-induced protons in the CR-39 (red diamonds) for varying sizes of LOS holes in the coil-spacer. The resultant $(S/B)_{dsr}$ from equation \ref{eq_signal2Background} is also shown as a black dashed curve. The compressed liners were compressed to 1.3 g/cm$^2$ and all other parameters were taken from Table \ref{tab_designParameters}. The spacer was the only external scattering source considered in these simulations.}
 	\label{fig_spacerLoS}
 	
@@ -210,7 +212,7 @@ The other way to mitigate the effects of external scatterings is using an extern
 \begin{figure}[h!]
 	
 	\centering
-	\includegraphics{S2B_externalShield}
+	\includegraphics[scale=1.5]{Figures/S2B_ExternalShield.pdf}
 	\caption{MCNP6 integrated down-scattered proton fluences in the case of a compressed liner (blue squares), in the case of no liner (yellow circles), and neutron-induced protons in the CR-39 (red diamonds) for varying thicknesses of external shielding. The resultant $(S/B)_{dsr}$ from equation \ref{eq_signal2Background} is also shown as a black dashed curve. The compressed liners were compressed to 1.3 g/cm$^2$ and all other parameters were taken from Table \ref{tab_designParameters}. All sources of external scattering in Table \ref{tab_externalParameters} were considered in these simulations.}
 	\label{fig_externalShielding}
 	
@@ -225,7 +227,8 @@ After incorporating the shielding requirements, the final conceptual design of t
 \begin{table}[!h]
 	\caption{Design parameters of the final conceptual design of the neutron-recoil-spectrometer. The slopes of the internal shield and the external surface of the housing is such that it would intersect with TCC if extended. The slopes of the internal surface of the housing and the external shielding match that of the external surface of the housing. }
 	\label{tab_designParameters}
-	\renewcommand{\arraystretch}{1.2} 
+	\renewcommand{\arraystretch}{1.2}
+	\centering
 	\begin{tabular}{  c c  }
 		&\\
 		\multicolumn{2}{c}{Internal Shield} \\\hline
@@ -262,7 +265,8 @@ After incorporating the shielding requirements, the final conceptual design of t
 \begin{table}[!h]
 	\caption{Performance metrics for the next neutron-recoil-spectrometer. Simulations were done using parameters listed in Table \ref{tab_externalParameters} and Table \ref{tab_designParameters}.}
 	\label{tab_performanceMetrics}
-	\renewcommand{\arraystretch}{1.5} 
+	\renewcommand{\arraystretch}{1.5}
+	\centering
 	\begin{tabular}{  c | c  }
 		Parameter & Value \\\hline
 		Recoil-Protons & 3200 per 10$^{12}$ DD-n \\ 
@@ -278,7 +282,7 @@ After incorporating the shielding requirements, the final conceptual design of t
 \begin{figure}[h!]
 	
 	\centering
-	\includegraphics{finalSpectra}
+	\includegraphics[scale=1.5]{Figures/finalSpectra.pdf}
 	\caption{MCNP6 generated recoil-proton spectra on the detector of the next neutron-recoil-spectrometer designed for the Z facility. All parameters are taken from Table \ref{tab_externalParameters} using appropriate LOS holes and \ref{tab_designParameters}. The blue data show the spectra in the case of a Be liner compressed to 1.3 g/cm$^2$ and the yellow show the case where no liner is modeled.}
 	\label{fig_finalSpectra}
 	
@@ -316,6 +320,7 @@ In this work, we define our sensitivities as the slope of the relative differenc
 	\caption{ Design sensitivities for the next neutron-recoil-spectrometer. Sensitivities come from linear fits to several simulations within the specified range.  }
 	\label{tab_designSensitivities}
 	\renewcommand{\arraystretch}{1.2} 
+	\centering
 	\begin{tabular}{  c | c | c | c }
 		\multirow{2}{*}{Parameter} & $Y_{\mathrm{DDn}}$ & $dsr$ & Range \\
 		&(per cm)&(per cm)&(cm)\\\hline
@@ -347,5 +352,11 @@ The data that support the findings of this study are available from the correspo
 \section*{Acknowledgments}
 
 The authors sincerely thank the Z facility operations staff who supported this work, and Bob Frankel and Ernie Doeg for processing the CR-39. This material is based upon work supported by the Department of Energy, National Nuclear Security Administration under Award Number DE-NA0003868, and by Sandia National Laboratories contract number 2080471. Sandia National Laboratories is a multimission laboratory managed and operated by National Technology and Engineering Solutions of Sandia, LLC, a wholly owned subsidiary of Honeywell International Inc., for the U.S. Department of Energy's National Nuclear Security Administration under contract DE-NA0003525 This report was prepared as an account of work sponsored by an agency of the United States Government. Neither the United States Government nor any agency thereof, nor any of their employees, makes any warranty, express or implied, or assumes any legal liability or responsibility for the accuracy, completeness, or usefulness of any information, apparatus, product, or process disclosed, or represents that its use would not infringe privately owned rights.  Reference herein to any specific commercial product, process, or service by trade name, trademark, manufacturer, or otherwise does not necessarily constitute or imply its endorsement, recommendation, or favoring by the United States Government or any agency thereof. The views and opinions of authors expressed herein do not necessarily state or reflect those of the United States Government or any agency thereof.
-\section*{References}	
-\bibliography{references}
+
+
+\begin{singlespace}
+    \begin{flushleft}
+        \bibliographystyle{unsrt}
+	    \bibliography{References/references}
+    \end{flushleft}
+\end{singlespace}

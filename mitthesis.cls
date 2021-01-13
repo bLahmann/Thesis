@@ -441,6 +441,14 @@ reserved.\par\permission}}
   \setbox\@abstractsupervisor\vbox{\unvbox\@abstractsupervisor
   \vskip\baselineskip \def\baselinestretch{1}\@normalsize 
   \par\noindent Thesis Supervisor: #1 \\ Title: #2}}
+  
+\def\reader#1#2{\setbox\@titlesupervisor\vbox
+  {\unvbox\@titlesupervisor \vskip 10pt% plus 1fil minus 1fil
+  \def\baselinestretch{1}\large
+  \signature{Certified by}{#1 \\ #2 \\ Thesis Reader}}
+  \setbox\@abstractsupervisor\vbox{\unvbox\@abstractsupervisor
+  \vskip\baselineskip \def\baselinestretch{1}\@normalsize 
+  \par\noindent Thesis Reader: #1 \\ Title: #2}}
 
 % department chairman, not thesis committee chairman
 \def\chairman#1#2{\gdef\@chairmanname{#1}\gdef\@chairmantitle{#2}}
@@ -483,7 +491,9 @@ at the
 % but we want people to also be able to get at the more
 % basic abstract environment
 \def\abstractpage{\cleardoublepage
-\begin{center}{\large{\bf \@title} \\
+\begin{center}
+\begin{singlespace}
+{\large{\bf \@title} \\
 by \\
 \@author \\[\baselineskip]}
 \par
@@ -492,6 +502,7 @@ Submitted to the \@department \\
 on \@thesisdate, in partial fulfillment of the \\
 requirements for the \@degreeword\ of \\
 \@degree
+\end{singlespace}
 \end{center}
 \par
 \begin{abstract}}
